@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100ch;
+    background: f4f8fb;
+    display: flex;
+}
+
+/*side bar styline*/
+header aside{
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    padding: 15px 0px 15px 30px;
+}
+
+header section{
+    position: relative;
+    height: 100%;
+    width: 85%;
+}
+
+header aside ul{
+    list-style-type: none;
+    margin-top: 50px;
+}
+header aside ul li{
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+header aside ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+header aside ul li a:hover{
+    color: black;
+}
+
+header aside ul li a i{
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+header ul li:nth-child(8){
+    border-right:3px solid black;
+}
+header ul li:nth-child(8) a{
+    color: black;
+}
+
+header aside button{
+    margin-top: 40px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #1ca1f1;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+header aside button:hover{
+    background: rgba(28, 161, 241, 0.5);
+}
+
+/*navigation bar*/
+header section nav{
+    width: 100%;
+    height: 8%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+
+header section nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header section nav ul li {
+    padding: 3px 25px 3px 0px;
+}
+
+header section nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+header section nav ul li a:hover{
+    color: gray;
+}
+
+header section nav .search_bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f8fb;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+header section nav .search_bar input{
+    width: 90%;
+    padding: 3px 15px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 12px;
+}
+
+header section nav .search_bar .bi{
+    font-size: 14px;
+}
+
+header section nav .user{
+    display:  flex;
+    align-items: center;
+}
+
+header section nav .user img{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/*section cover*/
+
+header section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: url(img/bg1.png) no-repeat center center/cover;
+    top: 8%;
+    border: 0px 0px 20px 0px;
+    opacity: 0.9;
+}
+
+/*profile box styling*/
+header section .profile_post_follow_bx{
+    position: relative;
+    top: 18%;
+    width: 100%;
+    height: 73%;
+    border: 1px solid black;
+    display: flex;
+    /*justify-content: center;*/
+    
+    
+}
+
+header section .profile_post_follow_bx .profile_bx{
+    width: 250px;
+    height: auto;
+    border: 1px solid;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px 10px 0px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card .blue_tick_pc{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 15px;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card .profile_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card h5{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card h6{
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+    padding: 2px 0;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card address{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card address a{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-style: normal;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card address a:nth-child(2){
+    margin-left: 10px;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card p{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px 5px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card .data{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
