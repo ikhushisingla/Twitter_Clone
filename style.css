@@ -4,6 +4,7 @@
     margin: 0;
     padding-left: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -145,6 +146,11 @@ header section nav .user{
     align-items: center;
 }
 
+header section nav .user h6{
+    color: black;
+    font-size: 12px;
+}
+
 header section nav .user img{
     margin-left: 10px;
     width: 30px;
@@ -168,10 +174,9 @@ header section::before{
 /*profile box styling*/
 header section .profile_post_follow_bx{
     position: relative;
-    top: 18%;
+    top: 15%;
     width: 100%;
     height: 73%;
-    border: 1px solid black;
     display: flex;
     /*justify-content: center;*/
     
@@ -181,7 +186,6 @@ header section .profile_post_follow_bx{
 header section .profile_post_follow_bx .profile_bx{
     width: 250px;
     height: auto;
-    border: 1px solid;
 }
 
 header section .profile_post_follow_bx .profile_bx .profile_card{
@@ -253,4 +257,89 @@ header section .profile_post_follow_bx .profile_bx .profile_card .data{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
 } 
+
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card{
+    width: 33.33%;
+} 
+
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card:nth-child(2){
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+} 
+
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card p,h4{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card h4{
+    font-size: 12px;
+    padding: 3px 0 7px 0;
+    color: black;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_bx{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx{
+    width: 115px;
+    height: 90px;
+    border: 2px solid rgb(213, 218, 222,0.5);
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx:nth-child(1){
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx i,h6{
+    font-size: 14px;
+    color: #d5dade;
+    padding: 10px;
+    transition: 0.3s linear;
+}
+header section .profile_post_follow_bx .profile_bx .activity_card_bx h6{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11px;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx:hover{
+    background: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx:hover h6{
+    color: black;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx:hover i{
+    color: black;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx:nth-child(1) h6{
+    color: black;
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_card_bx:nth-child(1) i{
+    color: black;
+}
