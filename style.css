@@ -135,9 +135,12 @@
     display: flex;
     padding: 20px;
     justify-content: center;
+    margin-bottom: 20px;
   }
   
   .tweetbox__input input {
+    background-color: black;
+    border-radius: 1%;
     flex: 1;
     margin-left: 20px;
     font-size: 20px;
@@ -154,8 +157,8 @@
     border-radius: 30px;
     width: 80px;
     height: 40px;
-    margin-top: 20px;
-    margin-left: auto;
+    margin-top: 18px;
+    margin-left: 500px;
   }
   
   /* post */
@@ -249,4 +252,10 @@
   .widgets__widgetContainer h2 {
     font-size: 18px;
     font-weight: 700;
+  }
+
+  @media only screen and (max-width: 600px){
+    body {
+      orientation: portrait;
+    }
   }
